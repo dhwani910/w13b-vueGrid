@@ -81,12 +81,12 @@ article{
 
 
 }
-@media only screen and(min-width: 991px){
+@media only screen and (min-width: 991px){
     #tweets{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-   
-}
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    
+    }
     
 }
 
