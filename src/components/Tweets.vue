@@ -4,12 +4,14 @@
     <div id="tweets" :class="{ 'list-view': listView}">
 
    
-        <article class="tweet" v-for="(tweet, index) in tweets"  :key="index">
+        <article class="tweet " v-for="(tweet, index) in tweets"  :key="index">
             <h4>{{tweet.author}}</h4>
              <h6>{{tweet.date}}</h6>
              <p>{{tweet.text}}</p>
 
         </article>
+        
+        
 
     </div>
 </div>
@@ -64,7 +66,7 @@ export default {
 
 #tweets{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
     padding: 1rem;
 }
@@ -75,9 +77,17 @@ export default {
 article{
     padding: 1rem;
     margin: 1rem;
-    background-color: rgb(222, 206, 240);
+    background-color: rgb(211, 185, 240);
 
 
+}
+@media only screen and(min-width: 991px){
+    #tweets{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+}
+    
 }
 
 </style>
