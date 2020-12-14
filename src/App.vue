@@ -1,7 +1,9 @@
 <template>
   <div id="app">
+    <h3>{{ switchState }}</h3>
+    <vue-tweets @click="callback"></vue-tweets>
     
-    <vue-tweets></vue-tweets>
+    <vue-container></vue-container>
     
   </div>
 </template>
@@ -9,10 +11,23 @@
 <script>
 
 import VueTweets from './components/Tweets.vue'
+import VueContainer from './components/TweetContainer'
 export default {
   name: 'App',
   components: {
-    VueTweets
+    VueTweets,
+    VueContainer,
+    
+  },
+  data(){
+    return{
+      switchState: true
+    }
+  },
+  methods: {
+    callback(value){
+      this.switchState = value
+    }
     
   }
 }

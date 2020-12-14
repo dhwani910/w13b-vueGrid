@@ -14,6 +14,7 @@
         
 
     </div>
+    
 </div>
     
 </template>
@@ -27,7 +28,7 @@ export default {
     name: 'vue-tweets',
     data(){
         return{
-            listView: false,
+            listView: true,
             tweets: [
                 {
                     author: 'dhwani',
@@ -45,17 +46,19 @@ export default {
                     text: 'having fun'
                 },
             ]
+           
         }
     },
 
     methods: {
         toggleview(){
             this.listView = !this.listView;
-            
+            this.$emit('click', this.listView)
         }
     }
     
 }
+
 </script>
 
 
