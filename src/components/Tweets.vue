@@ -53,7 +53,12 @@ export default {
     methods: {
         toggleview(){
             this.listView = !this.listView;
-            this.$emit('click', this.listView)
+            // this.$emit('click', this.listView)
+            if(this.listView == true){
+                document.querySelector('button').innerText = "List View";
+            }else{
+                document.querySelector('button').innerText = "Grid View";
+            }
         }
     }
     

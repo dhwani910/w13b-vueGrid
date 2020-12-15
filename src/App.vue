@@ -1,7 +1,7 @@
 <template>
   <div id="app">
-    <h3>{{ switchState }}</h3>
-    <vue-tweets @click="callback"></vue-tweets>
+    <!-- <h3>{{ switchState }}</h3> -->
+    <vue-tweets></vue-tweets>
     
     <vue-container></vue-container>
     
@@ -24,12 +24,12 @@ export default {
       switchState: true
     }
   },
-  methods: {
-    callback(value){
-      this.switchState = value
-    }
+  // methods: {
+  //   callback(value){
+  //     this.switchState = value
+  //   }
     
-  }
+  // }
 }
 </script>
 
