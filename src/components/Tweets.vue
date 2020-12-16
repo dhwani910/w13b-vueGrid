@@ -26,26 +26,15 @@
 <script>
 export default {
     name: 'vue-tweets',
+
+    props: {
+        tweets: Array
+
+    },
     data(){
         return{
             listView: true,
-            tweets: [
-                {
-                    author: 'dhwani',
-                    date: 'December 12,2020',
-                    text: 'hello world i am a tweet!!!'
-                },
-                {
-                    author: 'karen',
-                    date: 'December 11,2020',
-                    text: 'you can ask me anytime'
-                },
-                {
-                    author: 'nikki',
-                    date: 'December 14,2020',
-                    text: 'having fun'
-                },
-            ]
+          
            
         }
     },

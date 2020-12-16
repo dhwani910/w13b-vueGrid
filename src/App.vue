@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!-- <h3>{{ switchState }}</h3> -->
-    <vue-tweets></vue-tweets>
+    <vue-tweets :tweets="tweetList"></vue-tweets>
     
     <vue-container></vue-container>
     <vue-to-do></vue-to-do>
@@ -24,7 +24,25 @@ export default {
   },
   data(){
     return{
-      switchState: true
+      // switchState: true
+        tweetList: [
+                {
+                    author: 'dhwani',
+                    date: 'December 12,2020',
+                    text: 'hello world i am a tweet!!!'
+                },
+                {
+                    author: 'karen',
+                    date: 'December 11,2020',
+                    text: 'you can ask me anytime'
+                },
+                {
+                    author: 'nikki',
+                    date: 'December 14,2020',
+                    text: 'having fun'
+                },
+            ]
+
     }
   },
   // methods: {
