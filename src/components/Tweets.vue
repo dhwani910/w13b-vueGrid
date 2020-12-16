@@ -1,6 +1,6 @@
 <template>
 <div>
-     <button @click="toggleview">Toggle View</button>
+     <button class="button is-info" @click="toggleview">Toggle View</button>
     <div id="tweets" :class="{ 'list-view': listView}">
 
    
